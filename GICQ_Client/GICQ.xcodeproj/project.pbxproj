@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BE9C5A6BFBF62F470EFB477 /* Pods_GICQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3689E004F9814BF58442310B /* Pods_GICQ.framework */; };
+		F40215722913E304007520A7 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40215712913E304007520A7 /* ChatInfo.swift */; };
+		F428DC09290FDE54003BEBF9 /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428DC05290FDE54003BEBF9 /* MessageItem.swift */; };
+		F428DC0A290FDE54003BEBF9 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428DC06290FDE54003BEBF9 /* TableView.swift */; };
+		F428DC0B290FDE54003BEBF9 /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428DC07290FDE54003BEBF9 /* ChatDataSource.swift */; };
+		F428DC0C290FDE54003BEBF9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428DC08290FDE54003BEBF9 /* TableViewCell.swift */; };
+		F4359F9428F437E200F43BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4359F9328F437E200F43BA9 /* Main.storyboard */; };
+		F4359F9628F43D4200F43BA9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4359F9528F43D4200F43BA9 /* LoadingViewController.swift */; };
+		F464BE3E291D144300AB7178 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464BE3D291D144300AB7178 /* ChatViewController.swift */; };
+		F46951A729226BA500E6D275 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46951A629226BA500E6D275 /* RegisterViewController.swift */; };
+		F47425E628EC706F000F5079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47425E528EC706F000F5079 /* AppDelegate.swift */; };
+		F47425E828EC706F000F5079 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47425E728EC706F000F5079 /* SceneDelegate.swift */; };
+		F47425EA28EC706F000F5079 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47425E928EC706F000F5079 /* LoginViewController.swift */; };
+		F47425ED28EC706F000F5079 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47425EB28EC706F000F5079 /* Login.storyboard */; };
+		F47425F028EC706F000F5079 /* GICQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F47425EE28EC706F000F5079 /* GICQ.xcdatamodeld */; };
+		F47425F228EC7070000F5079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47425F128EC7070000F5079 /* Assets.xcassets */; };
+		F47425F528EC7070000F5079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47425F328EC7070000F5079 /* LaunchScreen.storyboard */; };
+		F474260028EC7070000F5079 /* GICQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47425FF28EC7070000F5079 /* GICQTests.swift */; };
+		F474260A28EC7070000F5079 /* GICQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474260928EC7070000F5079 /* GICQUITests.swift */; };
+		F474260C28EC7070000F5079 /* GICQUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474260B28EC7070000F5079 /* GICQUITestsLaunchTests.swift */; };
+		F47D91F22905168100F74837 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F47D91F12905166900F74837 /* libsqlite3.0.tbd */; };
+		F4877BF828FD7DBB0095AE54 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4877BF728FD7DBB0095AE54 /* TabBarViewController.swift */; };
+		F4877BFC28FD8AED0095AE54 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4877BFB28FD8AED0095AE54 /* ChatsViewController.swift */; };
+		F4C4EB5C28F5C51E0087907F /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4EB5B28F5C51E0087907F /* Client.swift */; };
+		F4CE7A8C291A4FFA0063D3E1 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE7A8B291A4FFA0063D3E1 /* MeViewController.swift */; };
+		F4CE7A8E291A53800063D3E1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE7A8D291A53800063D3E1 /* NewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F47425FC28EC7070000F5079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47425DA28EC706F000F5079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47425E128EC706F000F5079;
+			remoteInfo = GICQ;
+		};
+		F474260628EC7070000F5079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F47425DA28EC706F000F5079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F47425E128EC706F000F5079;
+			remoteInfo = GICQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3689E004F9814BF58442310B /* Pods_GICQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GICQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7ECD9A108B35F1E033B756 /* Pods-GICQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GICQ.debug.xcconfig"; path = "Target Support Files/Pods-GICQ/Pods-GICQ.debug.xcconfig"; sourceTree = "<group>"; };
+		71E9C13F307F176603511CC8 /* Pods-GICQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GICQ.release.xcconfig"; path = "Target Support Files/Pods-GICQ/Pods-GICQ.release.xcconfig"; sourceTree = "<group>"; };
+		F40215712913E304007520A7 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
+		F428DC05290FDE54003BEBF9 /* MessageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
+		F428DC06290FDE54003BEBF9 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		F428DC07290FDE54003BEBF9 /* ChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDataSource.swift; sourceTree = "<group>"; };
+		F428DC08290FDE54003BEBF9 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F4359F9328F437E200F43BA9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = SOURCE_ROOT; };
+		F4359F9528F43D4200F43BA9 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = GICQ/Main/LoadingViewController.swift; sourceTree = SOURCE_ROOT; };
+		F464BE3D291D144300AB7178 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F46951A629226BA500E6D275 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F47425E228EC706F000F5079 /* GICQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GICQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47425E528EC706F000F5079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F47425E728EC706F000F5079 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F47425E928EC706F000F5079 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F47425EC28EC706F000F5079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		F47425EF28EC706F000F5079 /* GICQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GICQ.xcdatamodel; sourceTree = "<group>"; };
+		F47425F128EC7070000F5079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F47425F428EC7070000F5079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F47425F628EC7070000F5079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47425FB28EC7070000F5079 /* GICQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GICQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47425FF28EC7070000F5079 /* GICQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GICQTests.swift; sourceTree = "<group>"; };
+		F474260528EC7070000F5079 /* GICQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GICQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F474260928EC7070000F5079 /* GICQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GICQUITests.swift; sourceTree = "<group>"; };
+		F474260B28EC7070000F5079 /* GICQUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GICQUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F47D91F12905166900F74837 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F4877BF728FD7DBB0095AE54 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = GICQ/Main/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		F4877BFB28FD8AED0095AE54 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatsViewController.swift; path = GICQ/Main/ChatsViewController.swift; sourceTree = SOURCE_ROOT; };
+		F4C4EB5B28F5C51E0087907F /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Client.swift; path = GICQ/WebCore/Client.swift; sourceTree = SOURCE_ROOT; };
+		F4CE7A8B291A4FFA0063D3E1 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		F4CE7A8D291A53800063D3E1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47425DF28EC706F000F5079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47D91F22905168100F74837 /* libsqlite3.0.tbd in Frameworks */,
+				5BE9C5A6BFBF62F470EFB477 /* Pods_GICQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47425F828EC7070000F5079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F474260228EC7070000F5079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B37C84B242CEBCBE95027B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F7ECD9A108B35F1E033B756 /* Pods-GICQ.debug.xcconfig */,
+				71E9C13F307F176603511CC8 /* Pods-GICQ.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C548BA879A737CDF7C9D3B7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47D91F12905166900F74837 /* libsqlite3.0.tbd */,
+				3689E004F9814BF58442310B /* Pods_GICQ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F428DC0D290FE550003BEBF9 /* WebCore */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4EB5B28F5C51E0087907F /* Client.swift */,
+			);
+			path = WebCore;
+			sourceTree = "<group>";
+		};
+		F428DC0E290FE571003BEBF9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F428DC07290FDE54003BEBF9 /* ChatDataSource.swift */,
+				F428DC05290FDE54003BEBF9 /* MessageItem.swift */,
+				F428DC06290FDE54003BEBF9 /* TableView.swift */,
+				F428DC08290FDE54003BEBF9 /* TableViewCell.swift */,
+				F40215712913E304007520A7 /* ChatInfo.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F428DC10290FE5A1003BEBF9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F47425E928EC706F000F5079 /* LoginViewController.swift */,
+				F4359F9528F43D4200F43BA9 /* LoadingViewController.swift */,
+				F4877BF728FD7DBB0095AE54 /* TabBarViewController.swift */,
+				F4877BFB28FD8AED0095AE54 /* ChatsViewController.swift */,
+				F4CE7A8B291A4FFA0063D3E1 /* MeViewController.swift */,
+				F4CE7A8D291A53800063D3E1 /* NewViewController.swift */,
+				F464BE3D291D144300AB7178 /* ChatViewController.swift */,
+				F46951A629226BA500E6D275 /* RegisterViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F47425D928EC706F000F5079 = {
+			isa = PBXGroup;
+			children = (
+				F47425E428EC706F000F5079 /* GICQ */,
+				F47425FE28EC7070000F5079 /* GICQTests */,
+				F474260828EC7070000F5079 /* GICQUITests */,
+				F47425E328EC706F000F5079 /* Products */,
+				14B37C84B242CEBCBE95027B /* Pods */,
+				C548BA879A737CDF7C9D3B7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F47425E328EC706F000F5079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47425E228EC706F000F5079 /* GICQ.app */,
+				F47425FB28EC7070000F5079 /* GICQTests.xctest */,
+				F474260528EC7070000F5079 /* GICQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47425E428EC706F000F5079 /* GICQ */ = {
+			isa = PBXGroup;
+			children = (
+				F428DC10290FE5A1003BEBF9 /* Main */,
+				F428DC0E290FE571003BEBF9 /* Chat */,
+				F428DC0D290FE550003BEBF9 /* WebCore */,
+				F47425E528EC706F000F5079 /* AppDelegate.swift */,
+				F47425E728EC706F000F5079 /* SceneDelegate.swift */,
+				F4359F9328F437E200F43BA9 /* Main.storyboard */,
+				F47425EB28EC706F000F5079 /* Login.storyboard */,
+				F47425F128EC7070000F5079 /* Assets.xcassets */,
+				F47425F328EC7070000F5079 /* LaunchScreen.storyboard */,
+				F47425F628EC7070000F5079 /* Info.plist */,
+				F47425EE28EC706F000F5079 /* GICQ.xcdatamodeld */,
+			);
+			path = GICQ;
+			sourceTree = "<group>";
+		};
+		F47425FE28EC7070000F5079 /* GICQTests */ = {
+			isa = PBXGroup;
+			children = (
+				F47425FF28EC7070000F5079 /* GICQTests.swift */,
+			);
+			path = GICQTests;
+			sourceTree = "<group>";
+		};
+		F474260828EC7070000F5079 /* GICQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F474260928EC7070000F5079 /* GICQUITests.swift */,
+				F474260B28EC7070000F5079 /* GICQUITestsLaunchTests.swift */,
+			);
+			path = GICQUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47425E128EC706F000F5079 /* GICQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F474260F28EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQ" */;
+			buildPhases = (
+				C2A1056F0E09C2812C99A864 /* [CP] Check Pods Manifest.lock */,
+				F47425DE28EC706F000F5079 /* Sources */,
+				F47425DF28EC706F000F5079 /* Frameworks */,
+				F47425E028EC706F000F5079 /* Resources */,
+				8041EAFF1636095A4EBB82B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GICQ;
+			productName = GICQ;
+			productReference = F47425E228EC706F000F5079 /* GICQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F47425FA28EC7070000F5079 /* GICQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F474261228EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQTests" */;
+			buildPhases = (
+				F47425F728EC7070000F5079 /* Sources */,
+				F47425F828EC7070000F5079 /* Frameworks */,
+				F47425F928EC7070000F5079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F47425FD28EC7070000F5079 /* PBXTargetDependency */,
+			);
+			name = GICQTests;
+			productName = GICQTests;
+			productReference = F47425FB28EC7070000F5079 /* GICQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F474260428EC7070000F5079 /* GICQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F474261528EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQUITests" */;
+			buildPhases = (
+				F474260128EC7070000F5079 /* Sources */,
+				F474260228EC7070000F5079 /* Frameworks */,
+				F474260328EC7070000F5079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F474260728EC7070000F5079 /* PBXTargetDependency */,
+			);
+			name = GICQUITests;
+			productName = GICQUITests;
+			productReference = F474260528EC7070000F5079 /* GICQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47425DA28EC706F000F5079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F47425E128EC706F000F5079 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F47425FA28EC7070000F5079 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F47425E128EC706F000F5079;
+					};
+					F474260428EC7070000F5079 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F47425E128EC706F000F5079;
+					};
+				};
+			};
+			buildConfigurationList = F47425DD28EC706F000F5079 /* Build configuration list for PBXProject "GICQ" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F47425D928EC706F000F5079;
+			productRefGroup = F47425E328EC706F000F5079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47425E128EC706F000F5079 /* GICQ */,
+				F47425FA28EC7070000F5079 /* GICQTests */,
+				F474260428EC7070000F5079 /* GICQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F47425E028EC706F000F5079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47425F528EC7070000F5079 /* LaunchScreen.storyboard in Resources */,
+				F47425F228EC7070000F5079 /* Assets.xcassets in Resources */,
+				F47425ED28EC706F000F5079 /* Login.storyboard in Resources */,
+				F4359F9428F437E200F43BA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47425F928EC7070000F5079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F474260328EC7070000F5079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8041EAFF1636095A4EBB82B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GICQ/Pods-GICQ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GICQ/Pods-GICQ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GICQ/Pods-GICQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2A1056F0E09C2812C99A864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GICQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47425DE28EC706F000F5079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47425EA28EC706F000F5079 /* LoginViewController.swift in Sources */,
+				F428DC0A290FDE54003BEBF9 /* TableView.swift in Sources */,
+				F464BE3E291D144300AB7178 /* ChatViewController.swift in Sources */,
+				F47425F028EC706F000F5079 /* GICQ.xcdatamodeld in Sources */,
+				F4C4EB5C28F5C51E0087907F /* Client.swift in Sources */,
+				F40215722913E304007520A7 /* ChatInfo.swift in Sources */,
+				F47425E628EC706F000F5079 /* AppDelegate.swift in Sources */,
+				F428DC0B290FDE54003BEBF9 /* ChatDataSource.swift in Sources */,
+				F4877BF828FD7DBB0095AE54 /* TabBarViewController.swift in Sources */,
+				F4CE7A8C291A4FFA0063D3E1 /* MeViewController.swift in Sources */,
+				F428DC09290FDE54003BEBF9 /* MessageItem.swift in Sources */,
+				F47425E828EC706F000F5079 /* SceneDelegate.swift in Sources */,
+				F428DC0C290FDE54003BEBF9 /* TableViewCell.swift in Sources */,
+				F46951A729226BA500E6D275 /* RegisterViewController.swift in Sources */,
+				F4CE7A8E291A53800063D3E1 /* NewViewController.swift in Sources */,
+				F4877BFC28FD8AED0095AE54 /* ChatsViewController.swift in Sources */,
+				F4359F9628F43D4200F43BA9 /* LoadingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F47425F728EC7070000F5079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F474260028EC7070000F5079 /* GICQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F474260128EC7070000F5079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F474260C28EC7070000F5079 /* GICQUITestsLaunchTests.swift in Sources */,
+				F474260A28EC7070000F5079 /* GICQUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F47425FD28EC7070000F5079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47425E128EC706F000F5079 /* GICQ */;
+			targetProxy = F47425FC28EC7070000F5079 /* PBXContainerItemProxy */;
+		};
+		F474260728EC7070000F5079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F47425E128EC706F000F5079 /* GICQ */;
+			targetProxy = F474260628EC7070000F5079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F47425EB28EC706F000F5079 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47425EC28EC706F000F5079 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		F47425F328EC7070000F5079 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F47425F428EC7070000F5079 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F474260D28EC7070000F5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F474260E28EC7070000F5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F474261028EC7070000F5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7ECD9A108B35F1E033B756 /* Pods-GICQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GICQ/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F474261128EC7070000F5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E9C13F307F176603511CC8 /* Pods-GICQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GICQ/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F474261328EC7070000F5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GICQ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GICQ";
+			};
+			name = Debug;
+		};
+		F474261428EC7070000F5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GICQ.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GICQ";
+			};
+			name = Release;
+		};
+		F474261628EC7070000F5079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GICQ;
+			};
+			name = Debug;
+		};
+		F474261728EC7070000F5079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Grub.GICQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GICQ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47425DD28EC706F000F5079 /* Build configuration list for PBXProject "GICQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F474260D28EC7070000F5079 /* Debug */,
+				F474260E28EC7070000F5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F474260F28EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F474261028EC7070000F5079 /* Debug */,
+				F474261128EC7070000F5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F474261228EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F474261328EC7070000F5079 /* Debug */,
+				F474261428EC7070000F5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F474261528EC7070000F5079 /* Build configuration list for PBXNativeTarget "GICQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F474261628EC7070000F5079 /* Debug */,
+				F474261728EC7070000F5079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F47425EE28EC706F000F5079 /* GICQ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F47425EF28EC706F000F5079 /* GICQ.xcdatamodel */,
+			);
+			currentVersion = F47425EF28EC706F000F5079 /* GICQ.xcdatamodel */;
+			path = GICQ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F47425DA28EC706F000F5079 /* Project object */;
+}
